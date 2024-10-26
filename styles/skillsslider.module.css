@@ -1,0 +1,9 @@
+.skillslide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 8px;
+}

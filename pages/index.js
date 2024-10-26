@@ -6,6 +6,7 @@ import WorkCard from "../components/WorkCard";
 import { useIsomorphicLayoutEffect } from "../utils";
 import { stagger } from "../animations";
 import Footer from "../components/Footer";
+import SkillsSlider from "../components/SkillsSlider";
 import Head from "next/head";
 import Button from "../components/Button";
 import Link from "next/link";
@@ -17,6 +18,7 @@ import data from "../data/portfolio.json";
 export default function Home() {
   // Ref
   const workRef = useRef();
+  const skillsSlider = useRef();
   const aboutRef = useRef();
   const textOne = useRef();
   const textTwo = useRef();
@@ -63,7 +65,8 @@ export default function Home() {
           handleWorkScroll={handleWorkScroll}
           handleAboutScroll={handleAboutScroll}
         />
-        <div className="laptop:mt-20 mt-10">
+        <div className="w-full desktop:flex desktop:flex-row items-center laptop:mt-20 mt-10">
+          <div className="desktop:w-3/5">
           <div className="mt-5">
             <h1
               ref={textOne}
@@ -73,28 +76,34 @@ export default function Home() {
             </h1>
             <h1
               ref={textTwo}
-              className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
+              className="text-2xl tablet:text-4xl laptop:text-4xl laptopl:text-6xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
             >
               {data.headerTaglineTwo}
             </h1>
             <h1
               ref={textThree}
-              className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
+              className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
             >
               {data.headerTaglineThree}
-            </h1>
-            <h1
-              ref={textFour}
-              className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
-            >
-              {data.headerTaglineFour}
             </h1>
           </div>
 
           <Socials className="mt-2 laptop:mt-5" />
+          </div>
+          <div className="mt-10 flex justify-center desktop:w-2/5">
+            <img
+              src={data.myPhoto}
+              alt={data.name}
+              className="w-3/5 tablet:w-4/5 laptop:w-3/5"
+            />
+          </div>
         </div>
-        <div className="mt-10 laptop:mt-30 p-2 laptop:p-0" ref={workRef}>
-          <h1 className="text-2xl text-bold">Work.</h1>
+        <div className="mt-10 laptop:mt-30 mb-10 laptop:mb-30 p-2 laptop:p-0" ref={skillsSlider}>
+        <h1 className="text-2xl desktop:text-4xl text-bold">Skills.</h1><hr />
+          <SkillsSlider />
+        </div>
+        <div className="mt-10 laptop:mt-30 mb-10 laptop:mb-30 p-2 laptop:p-0" ref={workRef}>
+          <h1 className="text-2xl desktop:text-4xl text-bold">Works.</h1><hr />
 
           <div className="mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4">
             {data.projects.map((project) => (
@@ -109,14 +118,15 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="mt-10 laptop:mt-30 p-2 laptop:p-0">
-          <h1 className="tablet:m-10 text-2xl text-bold">Services.</h1>
+        <div className="mt-10 laptop:mt-30  mb-10 laptop:mb-30 p-2 laptop:p-0">
+        <h1 className="text-2xl desktop:text-4xl text-bold">Services.</h1><hr />
           <div className="mt-5 tablet:m-10 grid grid-cols-1 laptop:grid-cols-2 gap-6">
             {data.services.map((service, index) => (
               <ServiceCard
                 key={index}
-                name={service.title}
+                title={service.title}
                 description={service.description}
+                backgroundImage={service.backgroundImage}
               />
             ))}
           </div>
@@ -129,11 +139,19 @@ export default function Home() {
             </Link>
           </div>
         )}
-        <div className="mt-10 laptop:mt-40 p-2 laptop:p-0" ref={aboutRef}>
-          <h1 className="tablet:m-10 text-2xl text-bold">About.</h1>
-          <p className="tablet:m-10 mt-2 text-xl laptop:text-3xl w-full laptop:w-3/5">
-            {data.aboutpara}
-          </p>
+        <div className="w-full" ref={aboutRef}>
+          <h1 className="text-2xl desktop:text-4xl text-bold">About.</h1>
+          <hr />
+          <div className="laptop:flex">
+            <div className="w-2/6 tablet:m-10 mt-2">
+              <img src={data.aboutImage} alt="About Image" />
+            </div>
+            <div className="w-4/6">
+              <p className="tablet:m-10 mt-2 text-lg laptop:text-2xl text-justify">
+                {data.aboutpara}
+              </p>  
+            </div>
+          </div>
         </div>
         <Footer />
       </div>

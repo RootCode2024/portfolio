@@ -10,6 +10,7 @@ import { useTheme } from "next-themes";
 import { name, showResume } from "../data/portfolio.json";
 import { resume } from "../data/portfolio.json";
 import data from "../data/portfolio.json";
+import DownloadButton from "../components/DownloadButton";
 
 const Resume = () => {
   const router = useRouter();
@@ -38,6 +39,9 @@ const Resume = () => {
         }`}
       >
         <Header isBlog />
+        <div className="fixed dektop:top-36 right-6">
+          <DownloadButton />
+        </div>
         {mount && (
           <div className="mt-10 w-full flex flex-col items-center">
             <div

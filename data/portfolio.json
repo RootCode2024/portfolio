@@ -1,1 +1,134 @@
-{"name":"Chetan","headerTaglineOne":"Hello 👋","headerTaglineTwo":"I'm Chetan Verma - curious","headerTaglineThree":"designer and devloper","headerTaglineFour":" based in New Delhi, India.","showCursor":true,"showBlog":true,"darkMode":true,"showResume":true,"socials":[{"id":"1","title":"Github","link":"https://github.com/chetanverma16"},{"id":"2","title":"LinkedIn","link":"https://www.linkedin.com/in/chetanverma7/"},{"id":"3","title":"Twitter","link":"https://twitter.com/realchetanverma"},{"id":"4","title":"Blog","link":"https://blog.chetanverma.com/"},{"id":"5","title":"Email","link":"mailto:hello@chetanverma.com"}],"projects":[{"id":"1","title":"Project One Test","description":"Web Design","imageSrc":"https://images.unsplash.com/photo-1487837647815-bbc1f30cd0d2?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8Njl8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60","url":"http://chetanverma.com/"},{"id":"2","title":"Project Two","description":"Web Development","imageSrc":"https://images.unsplash.com/photo-1605153864431-a2795a1b2f95?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwyNTY3ODl8fGVufDB8fHw%3D&auto=format&fit=crop&w=400&q=60","url":"http://chetanverma.com/"},{"id":"3","title":"Project Three","description":"Design","imageSrc":"https://images.unsplash.com/photo-1504083898675-c896ecdae86e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjJ8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60","url":"http://chetanverma.com/"},{"id":"4","title":"Project Four","description":"Marketing","imageSrc":"https://images.unsplash.com/photo-1492171983775-a51717616c0d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NjB8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60","url":"http://chetanverma.com/"},{"id":"5","title":"Project Five","description":"Development","imageSrc":"https://images.unsplash.com/photo-1534239143101-1b1c627395c5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NzZ8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60","url":"http://chetanverma.com/"},{"id":"6","title":"Project Six","description":"Design & Development","imageSrc":"https://images.unsplash.com/photo-1517479149777-5f3b1511d5ad?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTAyfHxwYXN0ZWx8ZW58MHx8MHw%3D&auto=format&fit=crop&w=400&q=60","url":"http://chetanverma.com/"}],"services":[{"id":"1","title":"Art Direction","description":"We help with the creation and development of online advertising ideas, with particular focus on their visual appearance."},{"id":"2","title":"Branding","description":"We design key brand elements such as the logo, color scheme, typography, and other design components that makes your brand stand out from competitors."},{"id":"3","title":"Web Design","description":"We build and optimize your online presence.  Website is the digital entry point into your business and a powerful revenue channel."},{"id":"4","title":"3D Design","description":"We combine creative design and technical skills to build striking 3D visualisations that bring your project to life."}],"aboutpara":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.","resume":{"tagline":"👋  I'm a software engineer, product designer.","description":"I have delivered world-class user experiences to millions of people. Well-versed with React, Javascript, and most of the Web frameworks.","experiences":[{"id":"1","dates":"March 2022 - Present","type":"Full Time","position":"Frontend Engineer at X","bullets":"Bullet One, Bullet Two"},{"id":"d495c23b-4f65-479a-9b8a-cfbc1c089725","dates":"July 2020 - March 2022","type":"Full Time","position":"Frontend Engineer at X","bullets":"Worked on the frontend of a React application, Worked on the frontend of a React application"}],"education":{"universityName":"University X","universityDate":"2016-2020","universityPara":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"},"languages":["Javascript","HTML5","CSS","Python","Go"],"frameworks":["React","Typescript","NodeJs"],"others":["Figma","AdobeXD","AWS"]}}
+{
+    "name": "Chrislain AVOCEGAN",
+    "headerTaglineOne": "Hello 👋",
+    "headerTaglineTwo": "I'm Chrislain AVOCEGAN - a Creative",
+    "headerTaglineThree": "Full-Stack Developer",
+    "headerTaglineFour": "based in Dakar, Senegal.",
+    "email": "chrislainavocegan24@gmail",
+    "myPhoto": "/images/profile.png",
+    "skillsText": "Proficient in modern technologies: Laravel, Vue.js, WordPress, Tailwind CSS, Figma, and more for high-performance web development.",
+    "showCursor": true,
+    "showBlog": false,
+    "darkMode": true,
+    "showResume": true,
+    "socials": [
+        { "id": "1", "title": "GitHub", "icon":"/images/github.svg", "link": "https://github.com/RootCode2024" },
+        { "id": "2", "title": "LinkedIn", "icon":"/images/linkedin.svg", "link": "https://www.linkedin.com/in/chrislain-avocegan-314273315" },
+        { "id": "3", "title": "Facebook", "icon":"/images/facebook.svg", "link": "https://facebook.com/chrislain.avocegan.1/" },
+        { "id": "4", "title": "Whatsapp", "icon":"/images/whatsapp.svg", "link": "https://wa.me/221776815208" }
+    ],
+    "projects": [
+        {
+            "id": "1",
+            "title": "GIE Holding Group Diama",
+            "description": "Corporate Website",
+            "imageSrc": "/images/giehgd.png",
+            "url": "https://holdinggroupdiama.com"
+        },
+        {
+            "id": "2",
+            "title": "Future Transport Expo",
+            "description": "Innovation in Transport",
+            "imageSrc": "/images/fte.png",
+            "url": "https://futuretransportexpo.com"
+        },
+        {
+            "id": "3",
+            "title": "Personal Portfolio",
+            "description": "Interactive Next.js Portfolio - Customized by me from an original project by Chetan Verma",
+            "imageSrc": "/images/portfolio.png",
+            "url": "/"
+        },
+        {
+            "id": "4",
+            "title": "NH High School",
+            "description": "School Management System",
+            "imageSrc": "https://www.shutterstock.com/image-vector/coming-soon-on-dark-background-600nw-2364512887.jpg",
+            "url": "/"
+        },
+        {
+            "id": "5",
+            "title": "Glory's Nails",
+            "description": "Beauty Salon Website",
+            "imageSrc": "https://www.shutterstock.com/image-vector/coming-soon-on-dark-background-600nw-2364512887.jpg",
+            "url": "/"
+        },
+        {
+            "id": "6",
+            "title": "Nahema Heaven Co",
+            "description": "Business Management App",
+            "imageSrc": "https://www.shutterstock.com/image-vector/coming-soon-on-dark-background-600nw-2364512887.jpg",
+            "url": "/"
+        }
+    ],
+"services": [
+    {
+        "id": "1",
+        "title": "Website Development",
+        "backgroundImage":"/images/cms.svg",
+        "description": "Designing and building responsive, visually appealing websites that enhance user engagement and effectively communicate your brand."
+    },
+    {
+        "id": "2",
+        "title": "Web Application Development",
+        "backgroundImage":"/images/software.svg",
+        "description": "Creating secure, scalable web applications customized to meet complex business requirements and improve operational efficiency."
+    },
+    {
+        "id": "3",
+        "title": "UX/UI Design",
+        "backgroundImage":"/images/design.svg",
+        "description": "Designing engaging and intuitive user experiences that stand out."
+    },
+    {
+        "id": "4",
+        "title": "Branding",
+        "backgroundImage":"/images/branding.svg",
+        "description": "Creating unique branding elements to help your brand make a memorable impression."
+    }
+    ],
+"aboutpara": "I'm Chrislain AVOCEGAN, a full-stack web developer specializing in Laravel, PHP, Vue.js, Tailwind CSS, and WordPress. My focus is on delivering high-quality, secure, and responsive web solutions that provide excellent user experiences. \n\nWith a background in computer science and hands-on experience across diverse industries, I’ve developed expertise in dynamic website development, scalable web applications, and UX/UI design. I also use design tools like Figma and Canvas Pro to create impactful brand visuals.\n\nCurrently, as a freelance developer, I work closely with clients to deliver customized projects, including websites, interactive platforms, and management apps. My goal is to offer strategic, creative solutions that align with client needs, ensuring project success and satisfaction.",
+"aboutImage":"/images/aboutimage.svg", 
+"resume": {
+        "tagline": "👋  Full-stack developer & Designer.",
+        "description": "I deliver optimized, high-quality web solutions, leveraging Laravel, Vue.js, and responsive design principles.",
+        "experiences": [
+            {
+                "id": "1",
+                "dates": "November 2019 - February 2020",
+                "type": "Part-Time",
+                "position": "Intern at Arson & Fils",
+                "bullets": "Maintained IT systems, provided tech support, gained foundational experience."
+            },
+            {
+                "id": "2",
+                "dates": "2020 - 2022",
+                "type": "Full Time",
+                "position": "Back-End Developer at PMD Developer",
+                "bullets": "Developed optimized backend solutions, enhanced data management processes."
+            },
+            {
+                "id": "3",
+                "dates": "2022 - 2023",
+                "type": "Full Time",
+                "position": "WordPress Developer at Intexprom",
+                "bullets": "Built and maintained WordPress sites for various clients, improved website functionalities."
+            },
+            {
+                "id": "4",
+                "dates": "2023 - Present",
+                "type": "Freelance",
+                "position": "Full Stack Developer",
+                "bullets": "Provided tailored web solutions, advised clients on technology strategy."
+            }
+        ],
+        "education": {
+            "universityName": "IPG-ISTI, Dakar, Senegal",
+            "universityDate": "2017-2022",
+            "universityPara": "Bachelor’s in Computer Science with a specialization in web development."
+        },
+        "languages": ["PHP", "JavaScript", "HTML5", "CSS", "MySQL"],
+        "frameworks": ["Laravel", "Vue.js", "Tailwind CSS"],
+        "others": ["Figma", "Canvas Pro", "Git"]
+    }
+}
