@@ -3,8 +3,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/autoplay";
 import { Autoplay } from "swiper/modules";
-import styles from "./../../styles/skillsslider.module.css";
 import data from "../../data/portfolio.json";
+import Image from "next/image";
+
 const skills = [
   {"name":"Laravel", "icon":"laravel.svg"},
   {"name":"vueJS", "icon":"vuejs.svg"},
@@ -33,10 +34,11 @@ const SkillsSlider = () => {
         <h2 className="skills-marquee flex mb-5 justify-center desktop:text-xl italic">{ data.skillsText }</h2>
       {skills.map((skill, index) => (
         <SwiperSlide key={index}>
-          <img
+          <Image
             className="max-h-20 mt-2 mb-2 desktop:max-h-28 justify-center"
             src={`/images/${skill.icon}`}
-          ></img>
+            width="100" height="100"
+          />
         </SwiperSlide>
       ))}
     </Swiper>

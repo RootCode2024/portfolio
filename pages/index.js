@@ -11,6 +11,7 @@ import Head from "next/head";
 import Button from "../components/Button";
 import Link from "next/link";
 import Cursor from "../components/Cursor";
+import Image from "next/image";
 
 // Local Data
 import data from "../data/portfolio.json";
@@ -91,11 +92,7 @@ export default function Home() {
           <Socials className="mt-2 laptop:mt-5" />
           </div>
           <div className="mt-10 flex justify-center desktop:w-2/5">
-            <img
-              src={data.myPhoto}
-              alt={data.name}
-              className="w-3/5 tablet:w-4/5 laptop:w-3/5"
-            />
+            <Image src={data.myPhoto} alt={data.name} width="350" height="350" className="w-3/5 tablet:w-4/5 laptop:w-3/5" />
           </div>
         </div>
         <div className="mt-10 laptop:mt-30 mb-10 laptop:mb-30 p-2 laptop:p-0" ref={skillsSlider}>
@@ -144,7 +141,8 @@ export default function Home() {
           <hr />
           <div className="laptop:flex">
             <div className="w-2/6 tablet:m-10 mt-2">
-              <img src={data.aboutImage} alt="About Image" />
+              <Image src={data.aboutImage} alt="About Image" width="530" height="530" />
+              
             </div>
             <div className="w-4/6">
               <p className="tablet:m-10 mt-2 text-lg laptop:text-2xl text-justify">

@@ -3,7 +3,6 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Head from "next/head";
 import Cursor from "../components/Cursor";
-
 import data from "../data/portfolio.json";
 
 const ContactPage = () => {
@@ -136,7 +135,7 @@ const ContactPage = () => {
                 <a href="https://comeup.com/fr/@chrislain-code" className="text-blue-500" target="_blank" rel="noopener noreferrer">https://comeup.com/fr/@chrislain-code</a>
                 </p>
                 <p className="text-md text-gray-700 mt-2">
-                <em>For optimal security, you can also reach me through Come Up, a secure platform that guarantees payment protection and client satisfaction. It's a trusted way to collaborate with transparency and confidence.</em>
+                <em>For optimal security, you can also reach me through Come Up, a secure platform that guarantees payment protection and client satisfaction. It&apos;s a trusted way to collaborate with transparency and confidence.</em>
                 </p>
             </div>
           </div>

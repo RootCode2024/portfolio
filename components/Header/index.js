@@ -3,6 +3,8 @@ import { useTheme } from "next-themes";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import Button from "../Button";
+import Image from "next/image";
+
 // Local Data
 import data from "../../data/portfolio.json";
 
@@ -27,12 +29,14 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                 onClick={() => router.push("/")}
                 className="font-medium p-2 laptop:p-0 link"
               >
-                <img
-                  className="h-8"
+                <Image
+                  className="h-8 w-8"
                   src={`/images/${
                     theme === "dark" ? "white_logo.png" : "dark_logo.png"
                   }`}
-                ></img>
+                  width="28"
+                  height="28"
+                />
               </h1>
 
               <div className="flex items-center">
@@ -42,17 +46,12 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                       setTheme(theme === "dark" ? "light" : "dark")
                     }
                   >
-                    <img
-                      className="h-6"
-                      src={`/images/${
-                        theme === "dark" ? "moon.svg" : "sun.svg"
-                      }`}
-                    ></img>
+                    <Image className="h-6" src={`/images/${theme === "dark" ? "moon.svg" : "sun.svg"}`} width="28" height="28" />
                   </Button>
                 )}
 
                 <Popover.Button>
-                  <img
+                  <Image
                     className="h-5"
                     src={`/images/${
                       !open
@@ -63,7 +62,9 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                         ? "cancel.svg"
                         : "cancel-white.svg"
                     }`}
-                  ></img>
+                    width="28"
+                    height="28"
+                  />
                 </Popover.Button>
               </div>
             </div>
@@ -132,12 +133,13 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
           onClick={() => router.push("/")}
           className="font-medium cursor-pointer mob:p-2 laptop:p-0"
         >
-          <img
+          <Image
             className="h-12"
             src={`/images/${
               theme === "dark" ? "white_logo.png" : "dark_logo.png"
             }`}
-          ></img>
+            width="28" height="28"
+          />
         </h1>
         {!isBlog ? (
           <div className="flex">
@@ -162,10 +164,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
               <Button
                 onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
               >
-                <img
-                  className="h-6"
-                  src={`/images/${theme === "dark" ? "moon.svg" : "sun.svg"}`}
-                ></img>
+              <Image className="h-6" src={`/images/${theme === "dark" ? "moon.svg" : "sun.svg"}`} width="28" height="28" />
               </Button>
             )}
           </div>
@@ -192,10 +191,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
               <Button
                 onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
               >
-                <img
-                  className="h-6"
-                  src={`/images/${theme === "dark" ? "moon.svg" : "sun.svg"}`}
-                ></img>
+                <Image className="h-6" src={`/images/${theme === "dark" ? "moon.svg" : "sun.svg"}`} width="28" height="28" />
               </Button>
             )}
           </div>
