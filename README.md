@@ -1,6 +1,6 @@
 # Portfolio de Chrislain AVOCEGAN
 
-![thumbnail](images/portfolio.png)
+![thumbnail](https://github.com/RootCode2024/portfolio/blob/main/public/images/portfolio.png)
 
 ### Live - [Ton site portfolio](https://chrislainavocegan.site)
 
