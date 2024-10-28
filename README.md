@@ -1,79 +1,61 @@
-![thumbnail](https://user-images.githubusercontent.com/16558205/180779213-ea740975-3df1-460a-a964-0a623ee25872.png)
+# Portfolio de Chrislain AVOCEGAN
 
-### Live - https://react-portfolio-template.netlify.app/
+![thumbnail](images/portfolio.png)
 
-### Demo Video - https://www.youtube.com/watch?v=62_HLbx2zLQ&t=9s
+### Live - [Ton site portfolio](https://chrislainavocegan.site)
 
-### Tutorials
+### Tutoriels
 
-Youtube - https://www.youtube.com/watch?v=8cmJ2kR4SpM
+- **YouTube** - [Regarder les tutoriels](https://www.youtube.com)
 
-Blog - https://blog.chetanverma.com/how-to-build-a-portfolio-website-using-nextjs-and-tailwindcss
+### Fonctionnalités
 
-### Features - 
-
-- Modern Stack (Next.js + TailwindCSS)
-- Minimal Design
-- Easy To Browse
-- Easy To Customize your details With GUI
-- Blog Crud (Create, Read, Update, Delete blog with easy to use UI).
-- Dark Mode
-
+- Stack moderne (Next.js + TailwindCSS)
+- Design minimal
+- Navigation facile
+- Personnalisation simple de vos détails avec une interface graphique
+- Blog CRUD (Créer, Lire, Mettre à jour, Supprimer des articles de blog avec une interface conviviale)
+- Mode sombre
 
 ### Sections
 
-- Header
-- Work
+- En-tête
+- Travaux
 - Services
-- About
+- À propos
 - Contact
-- Markdown Blog
+- Blog en Markdown
 
+### Comment utiliser
 
-### How To Use
+1. Clonez ce dépôt
+2. Exécutez `npm i`
+3. Lancez `npm run dev`
 
-- Clone this repo
-- run `yarn`
-- `yarn dev`
+### Comment déployer
 
+Il existe plusieurs manières de déployer ce dépôt. Ici, nous allons utiliser Vercel :
 
-### How To Deploy - 
+1. Connectez-vous à Vercel avec GitHub.
+2. Après vous être connecté, sélectionnez le dépôt que vous souhaitez déployer.
+3. Après avoir sélectionné, Vercel déploiera automatiquement votre site web.
 
-- There are many ways to Deploy this repo.
-- here we are gonna use netlify
-- Login into netlify with github
-- after login select the forked repo or the repo you want to deploy
-- after selecting netlify will automatially deploy your website.
+**Méthode rapide pour déployer ce dépôt** :
 
-Quickes way to deploy this repo - 
+[![Déployer sur Vercel](https://vercel.com/button)](https://vercel.com/import/gh/chetanverma16/react-portfolio-template)
 
-[![Deploy To Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/chetanverma16/react-portfolio-template)
+### Stack technologique utilisée
 
-
-### How To Contribute - 
-
-I would be very happy to review your PRs and all the awesome things that you can improve on this portfolio.
-
-
-### Tech Stack Used - 
 - Next.js
 - TailwindCSS
 
+### Remerciements
 
-### Thanks
-
-If you liked this portfolio template, don't forget to give it a ⭐.
-
-## Awesome Contributors
-[@Aryan3212](https://github.com/Aryan3212) [@achu-krishna](https://github.com/achu-krishna)
-
-## Supporting
-Many hours of hard work have gone into this project. Your support will be very appreciated!
-
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/chetanverma)
+Un grand merci à Chetan Verma pour ce modèle de portfolio.
 
 
+## Soutien
 
+De nombreuses heures de travail acharné ont été investies dans ce projet. Votre soutien sera grandement apprécié !
 
-
-
+[![Buy Me A Coffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/chrislainavocegan)
