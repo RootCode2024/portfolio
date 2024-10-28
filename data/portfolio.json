@@ -9,6 +9,7 @@
     "skillsText": "Proficient in modern technologies: Laravel, Vue.js, WordPress, Tailwind CSS, Figma, and more for high-performance web development.",
     "showCursor": true,
     "showBlog": false,
+    "downloadButtonIcon": "/images/download.svg",
     "darkMode": true,
     "showResume": true,
     "socials": [

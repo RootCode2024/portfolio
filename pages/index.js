@@ -71,7 +71,7 @@ export default function Home() {
           <div className="mt-5">
             <h1
               ref={textOne}
-              className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-4/5 mob:w-full laptop:w-4/5"
+              className="text-4xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-4/5 mob:w-full laptop:w-4/5"
             >
               {data.headerTaglineOne}
             </h1>
@@ -140,11 +140,11 @@ export default function Home() {
           <h1 className="text-2xl desktop:text-4xl text-bold">About.</h1>
           <hr />
           <div className="laptop:flex">
-            <div className="w-2/6 tablet:m-10 mt-2">
+            <div className="laptop:w-2/6 tablet:m-10 laptop:mt-2 mx-auto w-10/12">
               <Image src={data.aboutImage} alt="About Image" width="530" height="530" />
               
             </div>
-            <div className="w-4/6">
+            <div className="desktop:w-4/6 px-5 laptop:px-0">
               <p className="tablet:m-10 mt-2 text-lg laptop:text-2xl text-justify">
                 {data.aboutpara}
               </p>  

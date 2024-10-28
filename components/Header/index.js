@@ -19,12 +19,15 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
     setMounted(true);
   }, []);
 
+  // Vérifie si la route actuelle est "/contact"
+  const isContactPage = router.pathname === "/contact";
+
   return (
     <>
-      <Popover className="block tablet:hidden mt-5">
+      <Popover className="block tablet:hidden mt-3">
         {({ open }) => (
           <>
-            <div className="flex items-center justify-between p-2 laptop:p-0">
+            <div className="flex items-center justify-between p-1 laptop:p-0">
               <h1
                 onClick={() => router.push("/")}
                 className="font-medium p-2 laptop:p-0 link"
@@ -34,8 +37,8 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                   src={`/images/${
                     theme === "dark" ? "white_logo.png" : "dark_logo.png"
                   }`}
-                  width="28"
-                  height="28"
+                  width="30"
+                  height="30"
                 />
               </h1>
 
@@ -75,15 +78,28 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
             >
               {!isBlog ? (
                 <div className="grid grid-cols-1">
-                  <Button onClick={handleWorkScroll}>Works</Button>
-                  <Button onClick={handleAboutScroll}>About</Button>
+                  {/* Cache les boutons "Works" et "About" si on est sur la page "Contact" */}
+                  {!isContactPage && (
+                    <>
+                      <Button onClick={handleWorkScroll}>Works</Button>
+                      <Button onClick={handleAboutScroll}>About</Button>
+                    </>
+                  )}
+                  {isContactPage && (
+                    <>
+                      <Button onClick={() => router.push("/")} classes="first:ml-1">
+                        Home
+                      </Button>
+                    </>
+                  )}
+
                   {showBlog && (
                     <Button onClick={() => router.push("/blog")}>Blog</Button>
                   )}
                   {showResume && (
                     <Button
                       onClick={() =>
-                        window.open("mailto:chrislainavocegan24@gmail.com")
+                       router.push("/resume")
                       }
                     >
                       Resume
@@ -143,8 +159,20 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
         </h1>
         {!isBlog ? (
           <div className="flex">
-            <Button onClick={handleWorkScroll}>Works</Button>
-            <Button onClick={handleAboutScroll}>About</Button>
+            {/* Cache les boutons "Works" et "About" si on est sur la page "Contact" */}
+            {!isContactPage && (
+              <>
+                <Button onClick={handleWorkScroll}>Works</Button>
+                <Button onClick={handleAboutScroll}>About</Button>
+              </>
+            )}
+            {isContactPage && (
+              <>
+                <Button onClick={() => router.push("/")} classes="first:ml-1">
+                  Home
+                </Button>
+              </>
+            )}
             {showBlog && (
               <Button onClick={() => router.push("/blog")}>Blog</Button>
             )}
