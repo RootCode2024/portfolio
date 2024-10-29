@@ -2,14 +2,12 @@ import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Cursor from "../components/Cursor";
 import Header from "../components/Header";
+import Head from "next/head";
 import ProjectResume from "../components/ProjectResume";
 import Socials from "../components/Socials";
 import Button from "../components/Button";
 import { useTheme } from "next-themes";
-// Data
-import { name, showResume } from "../data/portfolio.json";
-import { resume } from "../data/portfolio.json";
-import data from "../data/portfolio.json";
+import portfolioData from "../data/portfolio.json"; // Import par défaut
 import DownloadButton from "../components/DownloadButton";
 
 const Resume = () => {
@@ -17,14 +15,30 @@ const Resume = () => {
   const theme = useTheme();
   const [mount, setMount] = useState(false);
 
+  const { name, showResume, resume, showCursor } = portfolioData; // Accès aux propriétés
+
   useEffect(() => {
     setMount(true);
     if (!showResume) {
       router.push("/");
     }
   }, []);
+
   return (
     <>
+    <Head>
+      <title>{name} | Resume</title>
+      <meta name="description" content={`${resume.tagline} - ${resume.description}`} />
+      <meta property="og:title" content={`${name} | Resume`} />
+      <meta property="og:description" content={resume.description} />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content={`${process.env.NEXT_PUBLIC_SITE_URL}/resume`} />
+      <meta property="og:image" content={`${process.env.NEXT_PUBLIC_SITE_URL}/images/profile.png`} />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content={`${name} | Resume`} />
+      <meta name="twitter:description" content={resume.description} />
+      <meta name="twitter:image" content={`${process.env.NEXT_PUBLIC_SITE_URL}/images/profile.png`} />
+    </Head>
       {process.env.NODE_ENV === "development" && (
         <div className="fixed bottom-6 right-6">
           <Button onClick={() => router.push("/edit")} type={"primary"}>
@@ -32,11 +46,9 @@ const Resume = () => {
           </Button>
         </div>
       )}
-      {data.showCursor && <Cursor />}
+      {showCursor && <Cursor />}
       <div
-        className={`container mx-auto mb-10 ${
-          data.showCursor && "cursor-none"
-        }`}
+        className={`container mx-auto mb-10 ${showCursor && "cursor-none"}`}
       >
         <Header isBlog />
         <div className="fixed dektop:top-36 right-6">
@@ -59,7 +71,6 @@ const Resume = () => {
               </div>
               <div className="mt-5">
                 <h1 className="text-2xl font-bold">Experience</h1>
-
                 {resume.experiences.map(
                   ({ id, dates, type, position, bullets }) => (
                     <ProjectResume
@@ -68,7 +79,7 @@ const Resume = () => {
                       type={type}
                       position={position}
                       bullets={bullets}
-                    ></ProjectResume>
+                    />
                   )
                 )}
               </div>
@@ -99,7 +110,6 @@ const Resume = () => {
                       </ul>
                     </div>
                   )}
-
                   {resume.frameworks && (
                     <div className="mt-2 mob:mt-5">
                       <h2 className="text-lg">Frameworks</h2>
@@ -112,7 +122,6 @@ const Resume = () => {
                       </ul>
                     </div>
                   )}
-
                   {resume.others && (
                     <div className="mt-2 mob:mt-5">
                       <h2 className="text-lg">Others</h2>

@@ -37,8 +37,8 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                   src={`/images/${
                     theme === "dark" ? "white_logo.png" : "dark_logo.png"
                   }`}
-                  width="30"
-                  height="30"
+                  width="50"
+                  height="50"
                 />
               </h1>
 
@@ -154,7 +154,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
             src={`/images/${
               theme === "dark" ? "white_logo.png" : "dark_logo.png"
             }`}
-            width="28" height="28"
+            width="50" height="50"
           />
         </h1>
         {!isBlog ? (
