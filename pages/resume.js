@@ -7,7 +7,7 @@ import ProjectResume from "../components/ProjectResume";
 import Socials from "../components/Socials";
 import Button from "../components/Button";
 import { useTheme } from "next-themes";
-import portfolioData from "../data/portfolio.json"; // Import par défaut
+import portfolioData from "../data/portfolio.json";
 import DownloadButton from "../components/DownloadButton";
 
 const Resume = () => {
@@ -15,7 +15,7 @@ const Resume = () => {
   const theme = useTheme();
   const [mount, setMount] = useState(false);
 
-  const { name, showResume, resume, showCursor } = portfolioData; // Accès aux propriétés
+  const { name, showResume, resume, showCursor } = portfolioData;
 
   useEffect(() => {
     setMount(true);

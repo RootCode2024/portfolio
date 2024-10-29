@@ -112,11 +112,11 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-10 laptop:mt-30 mb-10 laptop:mb-30 p-2 laptop:p-0" ref={skillsSlider}>
+          {/* <div className="mt-10 laptop:mt-30 mb-10 laptop:mb-30 p-2 laptop:p-0" ref={skillsSlider}>
             <h1 className="text-2xl desktop:text-4xl text-bold">Skills.</h1>
             <hr />
             <SkillsSlider />
-          </div>
+          </div> */}
 
           <div className="mt-10 laptop:mt-30 mb-10 laptop:mb-30 p-2 laptop:p-0" ref={workRef}>
             <h1 className="text-2xl desktop:text-4xl text-bold">Works.</h1>
