@@ -108,7 +108,7 @@ export default function Home() {
             </div>
 
             <div className="mt-10 flex justify-center desktop:w-2/5">
-              <Image src={data.myPhoto} alt={data.name} width="350" height="350" layout="responsive" className="w-3/5 tablet:w-4/5 laptop:w-3/5" />
+              <Image src={data.myPhoto} alt={data.name} width="350" height="350" className="w-3/5 tablet:w-4/5 laptop:w-3/5" />
             </div>
           </div>
 
@@ -151,7 +151,7 @@ export default function Home() {
             <hr />
             <div className="laptop:flex">
               <div className="laptop:w-2/6 tablet:m-10 laptop:mt-2 mx-auto w-10/12">
-                <Image src={data.aboutImage} alt="About Image" width="530" height="530" layout="responsive" />
+                <Image src={data.aboutImage} alt="About Image" width="530" height="530" />
               </div>
               <div className="desktop:w-4/6 px-5 laptop:px-0">
                 <p className="tablet:m-10 mt-2 text-lg laptop:text-2xl text-justify">
